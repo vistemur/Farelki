@@ -14,6 +14,8 @@ final class PersistanceService {
     private static let firstEntryKey = "firstEntry"
     private static let nameKey = "Name"
     private static let photoKey = "photo"
+    private static let ZakazTextKey = "ZakazText"
+    private static let priceKey = "price"
     
     // MARK: - Properties
     static var firstEntry: Bool {
@@ -46,4 +48,23 @@ final class PersistanceService {
         }
     }
     
+    static var zakazText: String {
+        get {
+            return UserDefaults.standard.string(forKey: ZakazTextKey) ?? ""
+        }
+        set {
+            UserDefaults.standard.set(newValue,
+                                      forKey: ZakazTextKey)
+        }
+    }
+    
+    static var price: Int {
+        get {
+            return UserDefaults.standard.integer(forKey: priceKey)
+        }
+        set {
+            UserDefaults.standard.set(newValue,
+                                      forKey: priceKey)
+        }
+    }
 }

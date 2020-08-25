@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08695855225F75E400E42BA8 /* ContactsListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08695853225F75E400E42BA8 /* ContactsListTableCell.xib */; };
+		08695856225F75E400E42BA8 /* ContactsListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08695854225F75E400E42BA8 /* ContactsListTableCell.swift */; };
 		08892139225935C700FB5E3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08892138225935C700FB5E3E /* AppDelegate.swift */; };
 		08892140225935C800FB5E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0889213F225935C800FB5E3E /* Assets.xcassets */; };
 		08892143225935C800FB5E3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08892141225935C800FB5E3E /* LaunchScreen.storyboard */; };
@@ -14,12 +16,15 @@
 		0889215122593D9A00FB5E3E /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0889214F22593D9A00FB5E3E /* MenuViewController.xib */; };
 		08892156225A332700FB5E3E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08892154225A332700FB5E3E /* RegisterViewController.swift */; };
 		08892157225A332700FB5E3E /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08892155225A332700FB5E3E /* RegisterViewController.xib */; };
-		0889215B225A336600FB5E3E /* ZakazViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08892159225A336600FB5E3E /* ZakazViewController.swift */; };
-		0889215C225A336600FB5E3E /* ZakazViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0889215A225A336600FB5E3E /* ZakazViewController.xib */; };
 		0889215F225A381B00FB5E3E /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0889215E225A381B00FB5E3E /* PersistenceService.swift */; };
+		089C7C5A225F8CCF00748761 /* ZakazViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089C7C58225F8CCF00748761 /* ZakazViewController.swift */; };
+		089C7C5B225F8CCF00748761 /* ZakazViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 089C7C59225F8CCF00748761 /* ZakazViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		081148AC2268A81600CD41FC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		08695853225F75E400E42BA8 /* ContactsListTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsListTableCell.xib; sourceTree = "<group>"; };
+		08695854225F75E400E42BA8 /* ContactsListTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsListTableCell.swift; sourceTree = "<group>"; };
 		08892135225935C700FB5E3E /* Farelki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Farelki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08892138225935C700FB5E3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0889213F225935C800FB5E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,9 +34,9 @@
 		0889214F22593D9A00FB5E3E /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		08892154225A332700FB5E3E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		08892155225A332700FB5E3E /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
-		08892159225A336600FB5E3E /* ZakazViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZakazViewController.swift; sourceTree = "<group>"; };
-		0889215A225A336600FB5E3E /* ZakazViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZakazViewController.xib; sourceTree = "<group>"; };
 		0889215E225A381B00FB5E3E /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		089C7C58225F8CCF00748761 /* ZakazViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZakazViewController.swift; sourceTree = "<group>"; };
+		089C7C59225F8CCF00748761 /* ZakazViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZakazViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,11 +50,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		081148AB2268A81600CD41FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				081148AC2268A81600CD41FC /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08695852225F75E400E42BA8 /* ContactsListTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				08695853225F75E400E42BA8 /* ContactsListTableCell.xib */,
+				08695854225F75E400E42BA8 /* ContactsListTableCell.swift */,
+			);
+			path = ContactsListTableCell;
+			sourceTree = "<group>";
+		};
 		0889212C225935C700FB5E3E = {
 			isa = PBXGroup;
 			children = (
 				08892137225935C700FB5E3E /* Farelki */,
 				08892136225935C700FB5E3E /* Products */,
+				081148AB2268A81600CD41FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,10 +87,10 @@
 		08892137225935C700FB5E3E /* Farelki */ = {
 			isa = PBXGroup;
 			children = (
+				0889214C22593D0400FB5E3E /* Supporting files */,
 				0889215D225A380700FB5E3E /* Services */,
 				0889214A22593CEE00FB5E3E /* Modules */,
 				0889214D22593D1700FB5E3E /* Resorces */,
-				0889214C22593D0400FB5E3E /* Supporting files */,
 			);
 			path = Farelki;
 			sourceTree = "<group>";
@@ -75,9 +98,9 @@
 		0889214A22593CEE00FB5E3E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				08892153225A330000FB5E3E /* Registrer */,
 				08892152225A32E300FB5E3E /* Menu */,
-				08892158225A333A00FB5E3E /* Zakaz */,
+				08892153225A330000FB5E3E /* Registrer */,
+				089C7C57225F8CB400748761 /* zakaz */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -105,6 +128,7 @@
 			children = (
 				0889214F22593D9A00FB5E3E /* MenuViewController.xib */,
 				0889214E22593D9A00FB5E3E /* MenuViewController.swift */,
+				08695852225F75E400E42BA8 /* ContactsListTableCell */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -118,21 +142,21 @@
 			path = Registrer;
 			sourceTree = "<group>";
 		};
-		08892158225A333A00FB5E3E /* Zakaz */ = {
-			isa = PBXGroup;
-			children = (
-				08892159225A336600FB5E3E /* ZakazViewController.swift */,
-				0889215A225A336600FB5E3E /* ZakazViewController.xib */,
-			);
-			path = Zakaz;
-			sourceTree = "<group>";
-		};
 		0889215D225A380700FB5E3E /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				0889215E225A381B00FB5E3E /* PersistenceService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		089C7C57225F8CB400748761 /* zakaz */ = {
+			isa = PBXGroup;
+			children = (
+				089C7C59225F8CCF00748761 /* ZakazViewController.xib */,
+				089C7C58225F8CCF00748761 /* ZakazViewController.swift */,
+			);
+			path = zakaz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +191,11 @@
 				TargetAttributes = {
 					08892134225935C700FB5E3E = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -193,10 +222,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089C7C5B225F8CCF00748761 /* ZakazViewController.xib in Resources */,
 				08892143225935C800FB5E3E /* LaunchScreen.storyboard in Resources */,
+				08695855225F75E400E42BA8 /* ContactsListTableCell.xib in Resources */,
 				0889215122593D9A00FB5E3E /* MenuViewController.xib in Resources */,
 				08892140225935C800FB5E3E /* Assets.xcassets in Resources */,
-				0889215C225A336600FB5E3E /* ZakazViewController.xib in Resources */,
 				08892157225A332700FB5E3E /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,9 +240,10 @@
 			files = (
 				0889215F225A381B00FB5E3E /* PersistenceService.swift in Sources */,
 				08892156225A332700FB5E3E /* RegisterViewController.swift in Sources */,
-				0889215B225A336600FB5E3E /* ZakazViewController.swift in Sources */,
+				089C7C5A225F8CCF00748761 /* ZakazViewController.swift in Sources */,
 				08892139225935C700FB5E3E /* AppDelegate.swift in Sources */,
 				0889215022593D9A00FB5E3E /* MenuViewController.swift in Sources */,
+				08695856225F75E400E42BA8 /* ContactsListTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
