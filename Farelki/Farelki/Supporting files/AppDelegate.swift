@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Farelki
-//
-//  Created by роман поздняков on 06/04/2019.
-//  Copyright © 2019 romchick. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -15,13 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        var startVC :UIViewController
-        
-//        if PersistanceService.firstEntry {
-            startVC = MenuViewController()
-//        } else {
-//            startVC = RegisterViewController()
-//        }
+        var startVC = MenuViewController()
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = startVC

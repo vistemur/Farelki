@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  FarelkiForGula
-//
-//  Created by роман поздняков on 18/04/2019.
-//  Copyright © 2019 romchick. All rights reserved.
-//
-
 import UIKit
 import MultipeerConnectivity
 
@@ -67,7 +59,5 @@ class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControll
         mcSession.delegate = self
         
     }
-
-
+    
 }
-

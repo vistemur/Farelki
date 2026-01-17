@@ -1,11 +1,3 @@
-//
-//  MenuViewController.swift
-//  Farelki
-//
-//  Created by роман поздняков on 06/04/2019.
-//  Copyright © 2019 romchick. All rights reserved.
-//
-
 import UIKit
 
 class MenuViewController: UIViewController {
